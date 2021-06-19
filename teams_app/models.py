@@ -6,8 +6,6 @@ class Teams(models.Model):
     points = models.IntegerField(null=True)
 
     def __repr__(self):
-        # 主キーとnameを表示させて見やすくする
-        # ex) 1: Alice
         return "{}: {}".format(self.pk, self.name)
 
-    __str__ = __repr__  # __str__にも同じ関数を適用
+    __str__ = __repr__ 
