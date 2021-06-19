@@ -10,8 +10,7 @@ from django.http import HttpResponse
 
 
 class TeamViewSet(viewsets.ModelViewSet):
-    queryset = Teams.objects.all()
-    #queryset = Teams.objects.all().order_by('points').reverse()
+    queryset = Teams.objects.all().order_by('points').reverse()
     serializer_class = TeamSerializer
 
     #lookup_field = "name"
