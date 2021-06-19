@@ -15,7 +15,7 @@ class Tech(models.Model):
 class Teams(models.Model):
     name = models.CharField(max_length=100)
     work = models.CharField(max_length=100)
-    points = models.IntegerField(null=True)
+    points = models.IntegerField(default=0)
     langs = models.ManyToManyField(Lang,blank=True)
     techs = models.ManyToManyField(Tech,blank=True)
 
