@@ -14,7 +14,7 @@ class TeamViewSet(viewsets.ModelViewSet):
     #queryset = Teams.objects.all().order_by('points').reverse()
     serializer_class = TeamSerializer
 
-    lookup_field = "name"
+    #lookup_field = "name"
 
 def index(request):
     return HttpResponse("仮のトップページ")
