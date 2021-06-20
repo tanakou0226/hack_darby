@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'hack-derby'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_0337b2a7bde14ea09e37b2253e6b2f2b }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_bf1b2c9c025c4cbc819dded1a3357398 }}
